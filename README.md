@@ -14,7 +14,6 @@
 #### 1.YouTube subscribers notification bot
 
 > ##### Started...
-
 - git clone https://github.com/sprumin/SubscriberAlert.git
 - cd SubscriberAlert
 - echo WEBHOOK_URL="yourdiscordwebhookurl"
@@ -24,7 +23,6 @@
 - check your discord channel
 
 > ##### Info...
-
 - python 으로 크롤링 공부를 하던 도중 게임 영상으로 유튜브를 하는 친구의 구독자수를 실시간으로 확인할 수 있는 방법이 뭐가 있을까 해서 만들게된 프로그램
 - 그렇다 저 위에 예제 url은 "그 친구"의 유튜브 주소다. ( 좋아요 구독하기 눌러주세요 핳 )
 - 사실 카톡으로 하면 어떨까 했지만 discord 지박령들이라 discord가 차라리 낫다고 판단함
