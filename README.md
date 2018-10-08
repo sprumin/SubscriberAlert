@@ -16,7 +16,7 @@
 > ##### Started...
 - git clone https://github.com/sprumin/SubscriberAlert.git
 - cd SubscriberAlert
-- echo WEBHOOK_URL="yourdiscordwebhookurl"
+- echo WEBHOOK_URL="yourdiscordwebhookurl" >> settings.py
   > 디스코드 채널 접속 -> 서버설정 -> 웹훅 생성 -> url 복사 후 위 양식에 맞게 붙여넣기
 - python youtube_alert.py "YoutubeLink"
   > ex) python youtube_alert.py https://www.youtube.com/channel/UCwqRPb8q7M6c1YHuBNDkR0w
