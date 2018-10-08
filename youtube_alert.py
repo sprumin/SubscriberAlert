@@ -4,6 +4,7 @@ from settings import WEBHOOK_URL
 
 import requests
 import time
+import sys
 
 temp_subscriber = 0
 
@@ -38,7 +39,7 @@ def main():
 
     global temp_subscriber
 
-    url = "https://www.youtube.com/channel/UCwqRPb8q7M6c1YHuBNDkR0w"
+    url = sys.argv[1]
     subscriber = get_subscriber(url)
     temp_subscriber = subscriber
     requests.post(WEBHOOK_URL, data={'content': '현재 구독자수 {}명'.format(subscriber)})
