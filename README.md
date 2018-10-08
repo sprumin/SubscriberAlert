@@ -1,6 +1,6 @@
-구독자 알림 봇 ( Subscribers Alert Bot ) by discord
+# 구독자 알림 봇 ( Subscribers Alert Bot ) by discord
 
-requirements
+### requirements
 
 - use python 3.5
 
@@ -9,21 +9,21 @@ requirements
 
 
 
-development
+### development
 
-1.YouTube subscribers notification bot
+#### 1.YouTube subscribers notification bot
 
-Started...
+##### Started...
 
 - git clone https://github.com/sprumin/SubscriberAlert.git
 - cd SubscriberAlert
 - echo WEBHOOK_URL="yourdiscordwebhookurl"
-  디스코드 채널 접속 -> 서버설정 -> 웹훅 생성 -> url 복사 후 위 양식에 맞게 붙여넣기
+  > 디스코드 채널 접속 -> 서버설정 -> 웹훅 생성 -> url 복사 후 위 양식에 맞게 붙여넣기
 - python youtube_alert.py "YoutubeLink"
-  ex) python youtube_alert.py https://www.youtube.com/channel/UCwqRPb8q7M6c1YHuBNDkR0w
+  > ex) python youtube_alert.py https://www.youtube.com/channel/UCwqRPb8q7M6c1YHuBNDkR0w
 - check your discord channel
 
-Info...
+##### Info...
 
 - python 으로 크롤링 공부를 하던 도중 게임 영상으로 유튜브를 하는 친구의 구독자수를 실시간으로 확인할 수 있는 방법이 뭐가 있을까 해서 만들게된 프로그램
 - 그렇다 저 위에 예제 url은 "그 친구"의 유튜브 주소다. ( 좋아요 구독하기 눌러주세요 핳 )
