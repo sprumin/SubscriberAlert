@@ -31,7 +31,7 @@
 >- 참고로 저 봇 프로필사진이 "김두X" 님이다
 >- 프로그램을 실행할때를 포함 구독자가 늘어나거나 줄어들면 아래와 같은 모습을 볼 수 있다.
   
-![png](https://user-images.githubusercontent.com/23535108/46600319-c2aa4500-cb24-11e8-8e6d-19eb027a43f9.PNG)
+>![png](https://user-images.githubusercontent.com/23535108/46600319-c2aa4500-cb24-11e8-8e6d-19eb027a43f9.PNG)
 
 
 developer " sprumin123@gmail.com "
