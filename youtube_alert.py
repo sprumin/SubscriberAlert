@@ -6,8 +6,6 @@ import requests
 import time
 import sys
 
-temp_subscriber = 0
-
 
 def get_subscriber(url):
     targetUrl = url
@@ -20,9 +18,7 @@ def get_subscriber(url):
     return int(subscriber)
 
 
-def check_subscriber(now_subscriber):
-    global temp_subscriber
-
+def check_subscriber(temp_subscriber, now_subscriber):
     if temp_subscriber > now_subscriber:
         temp_subscriber = now_subscriber
         requests.post(WEBHOOK_URL, data={'content': '누군가 구독버튼을 두번 누른거같군..'})
@@ -33,11 +29,11 @@ def check_subscriber(now_subscriber):
         requests.post(WEBHOOK_URL, data={'content': '구독자가 한명늘었네! 오케이 사딸라!'})
         requests.post(WEBHOOK_URL, data={'content': '현재 구독자수 {}명'.format(temp_subscriber)})
 
+    return temp_subscriber
+
 
 def main():
     print('Started bot...')
-
-    global temp_subscriber
 
     url = sys.argv[1]
     subscriber = get_subscriber(url)
@@ -45,7 +41,7 @@ def main():
     requests.post(WEBHOOK_URL, data={'content': '현재 구독자수 {}명'.format(subscriber)})
 
     while True:
-        check_subscriber(get_subscriber(url))
+        temp_subscriber = check_subscriber(temp_subscriber, get_subscriber(url))
         time.sleep(10)
 
 
