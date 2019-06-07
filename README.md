@@ -33,7 +33,7 @@
 >![png](https://user-images.githubusercontent.com/23535108/46600319-c2aa4500-cb24-11e8-8e6d-19eb027a43f9.PNG)
 
 
-developer " sprumin123@gmail.com "
+developer sprumin / " sprumin@gmail.com "
 
 
 
